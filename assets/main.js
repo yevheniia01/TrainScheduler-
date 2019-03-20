@@ -76,6 +76,7 @@ var config = {
       $('.g-signin2').css('display', 'none');
       $('h1').css('display', 'none');
       $('h2').css('display', 'none');
+      $('.container').append('<button type="button">SignOut</button>')
 
       //==============================console===================================================================//
       console.log("ID: " + profile.getId()); // Don't send this directly to your server!
@@ -89,4 +90,12 @@ var config = {
       var id_token = googleUser.getAuthResponse().id_token;
       console.log("ID Token: " + id_token);
     }
+function signOut()
+{
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function(){
+     alert("You have been Signed Out")
+        $(".g-signin2").css('display', 'block');
+    })
+}
     
