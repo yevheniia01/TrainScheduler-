@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <meta name="google-signin-client_id" content="223093470668-ag7b9fpmibmtq6j8s4f3e9j74879io9m.apps.googleusercontent.com">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="../TrainScheduler-/assets/style.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
 
     
 
@@ -60,12 +65,14 @@
                         <label for="formGroupExampleInput2">Frequency (min)</label>
                          <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Add Train Frequency">
                   </div>
-                  
+                  <div class="g-signin2" data-onsuccess="onSignIn"></div>
                   <button type="button" class="btn btn-dark"id="submitBtnText">Submit</button>
+                  
                 </form>
                 </div>
               </div>
     </div>
+    
 
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
