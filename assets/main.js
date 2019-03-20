@@ -73,7 +73,7 @@ var config = {
       // Useful data for your client-side scripts:
       var profile = googleUser.getBasicProfile();
       $('.card').css('display', 'block');
-
+      $('.g-signin2').css('display', 'none');
 
       //==============================console===================================================================//
       console.log("ID: " + profile.getId()); // Don't send this directly to your server!
