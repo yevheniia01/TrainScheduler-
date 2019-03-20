@@ -76,7 +76,7 @@ var config = {
       $('.g-signin2').css('display', 'none');
       $('h1').css('display', 'none');
       $('h2').css('display', 'none');
-      $('.container').append('<button type="button">SignOut</button>')
+      $('.container').append('<button type="button" id="signOutBtn">SignOut</button>')
 
       //==============================console===================================================================//
       console.log("ID: " + profile.getId()); // Don't send this directly to your server!
@@ -98,4 +98,7 @@ function signOut()
         $(".g-signin2").css('display', 'block');
     })
 }
+$("#signOutBtn").on('click', function(){
+    singOut();
+})
     
