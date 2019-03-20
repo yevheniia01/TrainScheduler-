@@ -74,6 +74,8 @@ var config = {
       var profile = googleUser.getBasicProfile();
       $('.card').css('display', 'block');
       $('.g-signin2').css('display', 'none');
+      $('h1').css('display', 'none');
+      $('h2').css('display', 'none');
 
       //==============================console===================================================================//
       console.log("ID: " + profile.getId()); // Don't send this directly to your server!
