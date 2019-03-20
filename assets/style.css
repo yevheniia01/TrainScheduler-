@@ -10,3 +10,8 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
+.g-signin2{
+    float: left;
+    margin-top: 20%;
+    margin-left: 43%;
+}
