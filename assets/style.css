@@ -4,7 +4,7 @@ body{
 .card{
     background-color: #f5f5f596;
     font-family: 'ZCOOL XiaoWei', serif;
-     display: none;
+    display: none;
 }
 .card-header{
     font-size: 20px;
@@ -12,6 +12,21 @@ body{
 }
 .g-signin2{
     float: left;
-    margin-top: 20%;
-    margin-left: 43%;
+    margin-top: 3%;
+    margin-left: 47%;
+}
+h2{
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+    font-family: 'Boogaloo', cursive;
+    font-size: 60px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Boogaloo', cursive;
+    text-shadow: 0 0 5px #fff, 0 0 10px #e5e33e, 0 0 20px #fff, 0 0 40px #b45b08, 0 0 80px #ffe400, 0 0 90px #ffb500, 0 0 100px #c99e04, 0 0 150px #b5ff00;
+
+    font-size: 60px;
 }
